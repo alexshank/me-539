@@ -1,0 +1,11 @@
+digraph gp {
+	sigma [label=<&sigma;>]
+	theta [label=<&theta;>]
+	x1n [label=<<b>x</b><sub>1:n</sub>> style=filled]
+	f [label=<<b>f</b><sub>1:n</sub>>]
+	y1n [label=<<b>y</b><sub>1:n</sub>> style=filled]
+	theta -> f
+	x1n -> f
+	f -> y1n
+	sigma -> y1n
+}

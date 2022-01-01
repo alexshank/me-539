@@ -1,0 +1,19 @@
+digraph full_bayes_regression_3 {
+	sigma [label=<&sigma;>]
+	subgraph cluster_0 {
+		xj [label=<<b>x</b><sub>j</sub>> style=filled]
+		yj [label=<y<sub>j</sub>> style=filled]
+		label="j=1,...,n"
+		labelloc=b
+	}
+	subgraph cluster_1 {
+		alphai [label=<&alpha;<sub>i</sub>>]
+		wi [label=<w<sub>i</sub>>]
+		label="i=1,...,m"
+		labelloc=b
+	}
+	alphai -> wi
+	sigma -> yj
+	wi -> yj
+	xj -> yj
+}

@@ -1,0 +1,15 @@
+digraph bayes_regression {
+	alpha [label=<&alpha;> style=filled]
+	w [label=<<b>w</b>>]
+	sigma [label=<&sigma;> style=filled]
+	subgraph cluster_0 {
+		xj [label=<<b>x</b><sub>j</sub>> style=filled]
+		yj [label=<y<sub>j</sub>> style=filled]
+		label="j=1,...,n"
+		labelloc=b
+	}
+	alpha -> w
+	sigma -> yj
+	w -> yj
+	xj -> yj
+}

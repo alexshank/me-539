@@ -1,0 +1,13 @@
+digraph gp2 {
+	sigma [label=<&sigma;> style=filled]
+	theta [label=<&theta;> style=filled]
+	x1n [label=<<b>x</b><sub>1:n</sub>> style=filled]
+	f [label=<<b>f</b><sub>1:n</sub>, <b>f</b>*<sub>1:n*</sub>>]
+	y1n [label=<<b>y</b><sub>1:n</sub>> style=filled]
+	xs1ns [label=<<b>x</b>*<sub>1:n*</sub>> style=filled]
+	theta -> f
+	x1n -> f
+	f -> y1n
+	xs1ns -> f
+	sigma -> y1n
+}
